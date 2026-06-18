@@ -4,10 +4,10 @@
 
 import asyncio
 import random
-from typing import AsyncGenerator
+from typing import Generator
 
 
-async def async_generator() -> AsyncGenerator[float, None, None]:
+async def async_generator() -> Generator[float, None, None]:
     """Yield 10 random floats with a one-second async delay between values.
 
     Yields:
@@ -15,4 +15,5 @@ async def async_generator() -> AsyncGenerator[float, None, None]:
     """
     for _ in range(10):
         await asyncio.sleep(1)
-        yield random.uniform(0, 10)
+        nombre = random.uniform(0, 10)
+        yield nombre
