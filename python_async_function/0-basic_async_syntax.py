@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+"""Asynchronous helper for delaying a random amount of time."""
+
 import random
 import asyncio
 
