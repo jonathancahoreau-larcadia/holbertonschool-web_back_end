@@ -18,6 +18,4 @@ async def main():
     return await(measure_runtime())
 
 
-print(
-    asyncio.run(main())
-)
+print(asyncio.run(main()))
